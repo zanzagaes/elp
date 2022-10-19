@@ -30,6 +30,7 @@
     transform: rotate(360deg);
   }
 }
+
 .rootCl {
   background-image: url("/public/assets/bg1.jpg");
   min-height: 100vh;
@@ -40,8 +41,6 @@
   scroll-snap-type: y mandatory;
 }
 
-.section {
+.section{
   scroll-snap-align: center;
 }
-
-/*# sourceMappingURL=App.css.map */

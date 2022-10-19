@@ -1,0 +1,59 @@
+$highlight_color: #5AFF3D;
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-bar-custom {
+  background: none !important;
+}
+
+.menu-icon {
+  color: #fff;
+  height: 30px;
+  width: 30px;
+}
+
+.highlighted {
+  color: $highlight_color;
+}
+
+.app-bar-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  text-align: center;
+}
+
+#title {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.subtitle {
+  color: #f2f2f2;
+  font-size: 1.5rem !important;
+}
+
+.go-down {
+  color: $highlight_color;
+  font-size: 4rem !important;
+}
+
+.logo {
+  color: #fff;
+  height: 30px;
+  width: 40px;
+  margin: 1rem;
+}
+
+.back {
+  background-color: rgba(106, 106, 106, 0.56);
+  box-shadow: rgba(50, 50, 93, 0.25) 0 50 100 -20, rgba(0, 0, 0, 0.3) 0 30 60 -30;
+  border-radius: 20px;
+}
