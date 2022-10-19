@@ -2,7 +2,7 @@ import { AppBar, IconButton, Toolbar, Collapse, Box } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import LongMenu from "./LongMenu";
-import { Link as Scroll } from 'react-scroll';
+import { Link, animateScroll as Scroll } from 'react-scroll';
 
 
 const color1 = "#A4B6DD";
@@ -58,7 +58,7 @@ const styles = {
   Back: {
     backgroundColor: "rgba(106, 106, 106, 0.56)",
     boxShadow:
-      "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
+        "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
     borderRadius: "20px",
   },
 };
@@ -105,11 +105,11 @@ export default function Header() {
               más sostenible.
             </p>
           </Box>
-          <Scroll to="place-to-visit" smooth={true}>
+          <Link to="place-to-visit" smooth={true}>
             <IconButton>
               <ExpandMoreIcon style={styles.goDown} />
             </IconButton>
-          </Scroll>
+          </Link>
         </div>
       </Collapse>
     </div>

@@ -15,7 +15,7 @@ const styles = {
 const Visit = () => {
     const checked = useWindowPosition('header');
     return (
-      <div className={styles.root} id="place-to-visit">
+      <div style={styles.root} id="place-to-visit">
         <ImageCard card={cards[1]} checked={checked} />
         <ImageCard card={cards[0]} checked={checked} />
       </div>
