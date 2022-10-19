@@ -1,18 +1,9 @@
-import {
-  AppBar,
-  IconButton,
-  Toolbar,
-  Collapse,
-  Box,
-  CssBaseline, Typography,
-} from "@mui/material";
+import {AppBar, IconButton, Toolbar, Collapse, Box, Typography} from "@mui/material";
 import React, { useEffect, useState } from "react";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import LongMenu from "./LongMenu";
-import { Link } from "react-scroll";
 import { Link as LogoLink } from "react-router-dom";
+import { CssBaseline } from "@mui/material";
 
-//const color1 = "#A4B6DD";
 const color2 = "#5AFF3D";
 
 const styles = {
@@ -50,6 +41,7 @@ const styles = {
   },
   title: {
     color: "#fff",
+    fontSize: "4.5rem",
   },
   subtitle: {
     color: "#f2f2f2",
@@ -72,7 +64,7 @@ const styles = {
   },
 };
 
-export default function Header() {
+export default function About() {
   const [checked, setChecked] = useState(false);
   useEffect(() => {
     setChecked(true);
@@ -87,7 +79,6 @@ export default function Header() {
               <img style={styles.Logo} src="/assets/railway.png" alt="logo" />
             </IconButton>
           </LogoLink>
-
           <Typography variant="h3" style={styles.AppBarTitle}>
             <span style={styles.TextColor}>Logic</span>stics.
           </Typography>
@@ -103,25 +94,21 @@ export default function Header() {
       >
         <div style={styles.container}>
           <Typography variant="h1" style={styles.title}>
-            Bienvenido a <br />
-            <span style={styles.TextColor}>Logic</span>stics.
+            <span style={styles.TextColor}>Logic</span>stics
           </Typography>
           <Box style={styles.Back} pt={1} pr={4} pl={4} pb={1}>
             <Typography variant="body1" style={styles.subtitle}>
-              Logicstics se dedica a la creación de algoritmos de
-              Machine Learning <br />
-              para la predicción de la demanda de prendas de ropa tienda a
-              tienda.
-              <br />
-              Así evitamos la sobreproducción y creamos una industria de la moda
-              más sostenible.
+              Ayudamos a miles de empresas de moda a
+              reducir la sobreproducción.<br/>
+
+              Nuestros valores:
+              <ul style={{listStyleType: 'none'}}>
+                <li><b>Menos es más</b>: creemos en que podemos hacer más con menos.
+                  La eficiencia es nuestra prioridad </li>
+                <li><b>Líderes</b>: queremos permanecer en la vanguardia de la revolución tecnológica</li>
+              </ul>
             </Typography>
           </Box>
-          <Link to="place-to-visit" smooth={true}>
-            <IconButton>
-              <ExpandMoreIcon style={styles.goDown} />
-            </IconButton>
-          </Link>
         </div>
       </Collapse>
     </div>

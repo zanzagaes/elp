@@ -3,16 +3,28 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import SortIcon from "@mui/icons-material/Sort";
-import '../css/menu.css'
+import { Link } from 'react-router-dom';
 
-const OPTIONS = [
+const options = [
   'Quiénes Somos',
   'Programa prácticas',
-  'Contacto',
 ];
+const optionsTrad = {
+  'Quiénes Somos':'About',
+  'Programa prácticas':'Internship',
+};
+
+const styles = {
+  MenuIcon: {
+    color: "#fff",
+    height: "30px",
+    width: "30px",
+  },
+}
 
 const ITEM_HEIGHT = 48;
-const LongMenu = () => {
+
+export default function LongMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -32,7 +44,7 @@ const LongMenu = () => {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        <SortIcon className="menu-icon"/>
+        <SortIcon style={styles.MenuIcon}/>
       </IconButton>
       <Menu
         id="long-menu"
@@ -49,14 +61,12 @@ const LongMenu = () => {
           },
         }}
       >
-        {OPTIONS.map((option) => (
+        {options.map((option) => (
           <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
-            {option}
+            <Link style={{textDecoration:"none",color:"black"}} to={`/${optionsTrad[option]}`}>{option}</Link>
           </MenuItem>
         ))}
       </Menu>
     </div>
   );
 }
-
-export default LongMenu;
