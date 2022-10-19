@@ -1,6 +1,5 @@
 import { CssBaseline } from '@mui/material';
 import React from 'react';
-import { makeStyles } from 'tss-react/mui';
 import Header from './components/Header'
 import Visit from './components/PlaceToVisit';
 import './App.css'

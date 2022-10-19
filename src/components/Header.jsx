@@ -2,7 +2,7 @@ import { AppBar, IconButton, Toolbar, Collapse, Box } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import LongMenu from "./LongMenu";
-import { Link, animateScroll as Scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 
 const color1 = "#A4B6DD";
