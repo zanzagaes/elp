@@ -36,10 +36,8 @@ export default function Footer() {
       <div style={styles.FooterCont}>
         <h3 style={styles.titleFooter}>Contexto</h3>
         <p style={styles.CustomP}>
-          Esta página web se ha creado en el contexto de la asignatura Ética
-          Legislación y Profesión, para que los alumnos puedan realizar un
-          simulacro de entrevista, cualquier duda contactar al mail:
-          example@example.com
+          Esta página web se ha creado en el contexto del proyecto <i>EnterView</i>, de simulación de entrevistas.
+          En caso de duda, consultar al mail alsanz16@ucm.es
         </p>
       </div>
     </footer>

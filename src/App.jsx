@@ -49,7 +49,8 @@ const theme = responsiveFontSizes(createTheme({
 }));
 
 theme.typography.h1 = {
-  fontSize: '1.5rem',
+  fontSize: '3.5rem',
+  marginBottom: '5%',
   '@media (max-width:800px)': {
     fontSize: '3.5rem',
   },
@@ -63,7 +64,7 @@ theme.typography.h2 = {
 };
 
 theme.typography.h3 = {
-  fontSize: '1rem',
+  fontSize: '2.5rem',
   '@media (max-width:800px)': {
     fontSize: '1.5rem',
   },
@@ -71,7 +72,7 @@ theme.typography.h3 = {
 
 
 theme.typography.body1 = {
-  fontSize: '0.5rem',
+  fontSize: '1.5rem',
   '@media (max-width:800px)': {
     fontSize: '1.25rem',
   },
