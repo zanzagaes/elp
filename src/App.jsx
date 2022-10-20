@@ -79,7 +79,7 @@ theme.typography.body1 = {
 };
 
 
-export default () => <div style={styles.root} className="rootCl">
+const App = () => <div style={styles.root} className="rootCl">
   <ThemeProvider  theme={theme}>
     <CssBaseline />
     <Routes>
@@ -89,3 +89,5 @@ export default () => <div style={styles.root} className="rootCl">
     </Routes>
   </ThemeProvider>
 </div>;
+
+export default App;
